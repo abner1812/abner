@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png">
+    </nav>
+    
+    <div class="secao secao-1">
+        <h2>Para Você</h2>
+        <div class="barra-catalogo">
+            <div class="filme">
+                <a href="https://www.netflix.com/br/title/81002370" target="_blank"><img src="https://img.elo7.com.br/product/zoom/3B3CC43/big-poster-serie-cobra-kai-netflix-lo004-tamanho-90x60-cm-presente-geek.jpg"></a>
+            </div>
+            <div class="filme">
+                <a href="https://www.netflix.com/br/title/70195800" target="_blank">
+                    <img src="https://i.pinimg.com/736x/88/9f/4b/889f4b375ae47c523a0c6a976dd0bb24.jpg">
+                </a>
+            </div>
+            <div class="filme">
+                <a href="https://www.netflix.com/title/81098494" target="_blank">
+                    <img src="https://i.uai.com.br/wm2u7JtUm2CsKPCe1JSDigHmvPw=/750x0/imgsapp2.uai.com.br/app/noticia_133890394703/2023/05/15/323057/foto2_2_158126.jpg">
+                </a>
+            </div>
+            <div class="filme">
+                <a href="https://www.netflix.com/title/81396545" target="_blank"></a>
+                    <img src="https://image.tmdb.org/t/p/original/gHxFef9P5cJk9Ki5SlVpa0uF1S2.jpg">
+                </a>
+            </div>
+            <div class="filme">
+                <a href="https://www.netflix.com/br/title/81665878" target="_blank"></a>
+                    <img src="https://s2-quem.glbimg.com/aM26Wj-wj1iDXQm8aYTwz41Ahuw=/0x0:2035x3000/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2023/x/f/WdD62kQXa7Cp74RvanFg/midrp1-intl-online-teaser-1sheet.jpg">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="secao secao-2">
+        <h2>Assistir Novamente</h2>
+        <div class="barra-catalogo">
+            <div class="filme">
+                <a href="#missao-impossivel"></a>
+                    <img src="https://br.web.img2.acsta.net/pictures/23/05/17/15/44/5844161.jpg">
+                </a>
+            </div>
+            <div class="filme">
+                <a href="#recruta"></a>
+                    <img src="https://pipocamoderna.com.br/storage/2022/09/The-Recruit-Netflix.jpg">
+                </a>
+            </div>
+            <div class="filme">
+                <a href="#resgate"></a>
+                    <img src="https://p2.trrsf.com/image/fget/cf/1200/1600/middle/images.terra.com/2023/05/16/1217292956-extraction-2-netflix.jpg">
+                </a>
+            </div>
+            <div class="filme">
+                <a href="#suits"></a>
+                    <img src="https://i.ebayimg.com/images/g/IOIAAOSwfSpkOpEX/s-l1200.jpg">
+                </a>
+            </div>
+            <div class="filme">
+                <a href="#cobra-kai"></a>
+                    <img src="https://img.elo7.com.br/product/zoom/3B3CC2E/big-poster-serie-cobra-kai-netflix-lo001-tamanho-90x60-cm-poster-de-filme.jpg">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="pop-up-filme" id="cobra-kai">
+        <div class="bg-icone">
+            <i class="fa-solid fa-x icone-fechar"><a href="#close"></a></i>
+        </div>
+        <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/07/cobra-kai-ralph-macchio-william-zabka-e1721301775927.jpg?w=1200&h=675&crop=1">
+        <div class="texto">
+            <h1>Cobra Kai</h1>
+            <p>Cobra Kai é uma série de drama e ação de artes marciais que conta a história da rivalidade entre Johnny Lawrence e Daniel LaRusso, protagonistas da trilogia Karatê Kid.</p>
+        </div>
+    </div>
+    <div class="pop-up-filme" id="suits">
+        <div class="bg-icone">
+            <i class="fa-solid fa-x icone-fechar"><a href="#close"></a></i>
+        </div>
+        <img src="https://www.nbc.com/sites/nbcblog/files/2024/02/suits-309-michael-harvey.jpg">
+        <div class="texto">
+            <h1>Suits</h1>
+            <p>O advogado corporativo de Manhattan Harvey Specter e sua equipe iniciam uma disputa pelo poder quando um novo sócio se junta à empresa. Com seus dois melhores associados desaparecidos e Jessica de volta a Chicago, Specter e a equipe tentam se adaptar a estar sem eles.</p>
+        </div>
+    </div>
+    <div class="pop-up-filme" id="resgate">
+        <div class="bg-icone">
+            <i class="fa-solid fa-x icone-fechar"><a href="#close"></a></i>
+        </div>
+        <img src="https://img.odcdn.com.br/wp-content/uploads/2021/09/resgate-netflix.jpg">
+        <div class="texto">
+            <h1>Resgate 2</h1>
+            <p>Depois de escapar da morte por um triz, o mercenário Tyler Rake encara mais uma missão perigosa: resgatar a família de um criminoso implacável.</p>
+        </div>
+    </div>
+    <div class="pop-up-filme" id="recruta">
+        <div class="bg-icone">
+            <i class="fa-solid fa-x icone-fechar"><a href="#close"></a></i>
+        </div>
+        <img src="https://portalsobresagas.com.br/wp-content/uploads/2022/12/o-recruta-3-motivos-para-assistir-e-2-para-passar-longe.jpg">
+        <div class="texto">
+            <h1>O Recruta</h1>
+            <p>Um advogado novato na CIA entra no perigoso mundo da espionagem internacional quando uma antiga colaboradora ameaça expor segredos da agência.</p>
+        </div>
+    </div>
+    <div class="pop-up-filme" id="missao-impossivel">
+        <div class="bg-icone">
+            <i class="fa-solid fa-x icone-fechar"><a href="#close"></a></i>
+        </div>
+        <img src="https://viventeandante.com/wp-content/uploads/2023/07/MI7-critica-acerto-de-contas.jpg">
+        <div class="texto">
+            <h1>Missão: Impossível - Acerto de Contas</h1>
+            <p>Ethan Hunt e sua equipe devem rastrear uma nova arma que pode ameaçar toda a humanidade se cair em mãos erradas. Com o destino do mundo em jogo, se inicia uma corrida mortal ao redor do globo.</p>
+        </div>
+    </div>
+</body>
+</html>
