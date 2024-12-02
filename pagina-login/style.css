@@ -4,6 +4,7 @@
     font-family: "Parkinsans", sans-serif;
     box-sizing: border-box;
 }
+/*Cores*/
 :root {
     --bg-color: black;
     --details: rgb(255, 221, 0);
@@ -15,10 +16,12 @@ body {
     height: 100vh;
     background-color: rgb(241, 240, 240);
 }
+/*Seleção Personalizada*/
 ::selection {
     background-color: var(--bg-color);
     color: var(--details);
 }
+/* Container Principal */
 .mainContent {
     width: 700px;
     height: 400px;
@@ -29,11 +32,13 @@ body {
     border-radius: 40px;
     position: relative;
 }
+/* Container com os forms */
 .forms {
     width: 100%;
     height: 100%;
     display: flex;
 }
+/* Divisão do form de login  */
 .login {
     height: 100%;
     width: 50%;
@@ -42,6 +47,17 @@ body {
     align-items: center;
     padding: 20px;
 }
+/* Divisão do form de cadastro */
+.cadastro {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 40px 40px 0;
+    padding: 20px;
+}
+/* Estilos do form de login */
 .telaLogin {
     display: flex;
     flex-flow: column wrap;
@@ -50,6 +66,7 @@ body {
     height: 60%;
     width: 80%;
 }
+/* Estilos dos inputs do form de login */
 .telaLogin #email, .telaLogin #senha {
     padding: 10px 15px;
     background-color: rgb(241, 240, 240);
@@ -58,11 +75,13 @@ body {
     border-radius: 30px;
     width: 100%;
 }
+/* Estilos do link do form de login */
 .telaLogin a {
     font-size: 10px;
     text-decoration: none;
     color: rgb(138, 138, 138);
 }
+/* Estilos do botão do form de login */
 .telaLogin .botao-login {
     padding: 10px 15px;
     border-radius: 30px;
@@ -79,6 +98,42 @@ body {
         border: 2px var(--details) solid;
     }
 }
+/* Estilos da tela de cadastro */
+.telaCadastro {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 70%;
+    width: 80%;
+}
+/* Estilos dos inputs da tela de cadastro */
+.telaCadastro #nome, .telaCadastro #email, .telaCadastro #senha {
+    padding: 10px 15px;
+    background-color: rgb(241, 240, 240);
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    width: 100%;
+}
+/* Estilos do botão da tela de cadastro */
+.telaCadastro .botao-cadastro {
+    padding: 10px 15px;
+    border-radius: 30px;
+    outline: 0;
+    border: 0;
+    background-color: var(--bg-color);
+    border: 2px var(--bg-color) solid;
+    color: var(--details);
+    transition: all 0.3s ease;
+    &:hover {
+        cursor: pointer;
+        background-color: var(--details);
+        color: var(--bg-color);
+        border: 2px var(--details) solid;
+    }
+}
+/* Animações da classe active */
 .mainContent.active .convites {
     transform: translateX(-100%);
     border-radius: 40px 0 0 40px;
@@ -95,6 +150,7 @@ body {
 .mainContent.unactive .conviteCadastro {
     transform: translateX(0);
 } */
+/* Divisão de convites, o quadrado animado */
 .convites {
     width: 50%;
     height: 400px;
@@ -106,6 +162,7 @@ body {
     overflow: hidden;
     transition: all 0.6s ease-in-out;
 }
+/* Camada Invisível, com os dois convites */
 .alternar {
     height: 100%;
     position: relative;
@@ -117,12 +174,14 @@ body {
     align-items: center;
     transition: all 0.6s ease-in-out;
 }
+/* Estilo para os dois convites */
 .painel {
     position: absolute;
     height: 100%;
     width: 50%;
     transition: all 0.6s ease-in-out;
 }
+/* Estilos do convite de login */
 .conviteLogin {
     display: flex;
     flex-flow: column wrap;
@@ -136,6 +195,7 @@ body {
         text-align: center;
     }
 }
+/* Estilos pro botão de convite de login */
 .conviteLogin .botao-convite-login {
     padding: 10px 15px;
     border-radius: 30px;
@@ -149,6 +209,7 @@ body {
         color: var(--bg-color);
     }
 }
+/* Estilos pro convite de cadastro */
 .conviteCadastro {
     display: flex;
     flex-flow: column wrap;
@@ -162,6 +223,7 @@ body {
         text-align: center;
     }
 }
+/* Estilos pro botão de convite de cadastro */
 .conviteCadastro .botao-convite-cadastro {
     padding: 10px 15px;
     border-radius: 30px;
@@ -173,46 +235,5 @@ body {
         cursor: pointer;
         background-color: var(--details);
         color: var(--bg-color);
-    }
-}
-.cadastro {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0 40px 40px 0;
-    padding: 20px;
-}
-.telaCadastro {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-    align-items: center;
-    height: 70%;
-    width: 80%;
-}
-.telaCadastro #nome, .telaCadastro #email, .telaCadastro #senha {
-    padding: 10px 15px;
-    background-color: rgb(241, 240, 240);
-    border: none;
-    outline: none;
-    border-radius: 30px;
-    width: 100%;
-}
-.telaCadastro .botao-cadastro {
-    padding: 10px 15px;
-    border-radius: 30px;
-    outline: 0;
-    border: 0;
-    background-color: var(--bg-color);
-    border: 2px var(--bg-color) solid;
-    color: var(--details);
-    transition: all 0.3s ease;
-    &:hover {
-        cursor: pointer;
-        background-color: var(--details);
-        color: var(--bg-color);
-        border: 2px var(--details) solid;
     }
 }
