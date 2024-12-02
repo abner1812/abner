@@ -18,8 +18,8 @@ body {
 }
 /*Seleção Personalizada*/
 ::selection {
-    background-color: var(--bg-color);
-    color: var(--details);
+    background-color: var(--details);
+    color: var(--bg-color);
 }
 /* Container Principal */
 .mainContent {
